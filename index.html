@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Loader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <h1>Atlas Loading...</h1>
+  </div>
+
+  <!-- Main site -->
+  <div id="main-site" class="hidden">
+    <h1>Welcome to Atlas</h1>
+
+    <!-- Key system -->
+    <div class="key-system">
+      <input type="text" id="key-input" placeholder="Enter your Atlas key">
+      <button onclick="validateKey()">Unlock</button>
+      <p id="key-msg"></p>
+    </div>
+
+    <!-- Cool tools section -->
+    <div class="tools">
+      <h2>Atlas Tools</h2>
+      <button onclick="runTestTool()">Test Tool</button>
+      <button onclick="runAnimation()">Run Animation</button>
+      <div id="tool-output"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
